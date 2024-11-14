@@ -2,6 +2,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Ubuntu } from "next/font/google";
 import "@/styles/globals.css";
 
+import "@/styles/Banner.css"
+
 
 
 // Import Ubuntu font from Google Fonts
