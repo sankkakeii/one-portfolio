@@ -16,7 +16,7 @@ const statsData = [
 
 export default function PortfolioBento() {
     return (
-        <div className="min-h-screen flex items-center justify-center w-full px-4 py-8 sm:px-6 lg:px-8 relative">
+        <div className="min-h-screen flex items-center bg-transparent justify-center w-full px-4 py-8 sm:px-6 lg:px-8 relative">
             <main className="w-full max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
 

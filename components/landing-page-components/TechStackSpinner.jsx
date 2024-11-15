@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 import { Code, Server, Cloud } from 'lucide-react'
 
 const techStack = [
-    { category: 'Frontend', items: ['React', 'Vue.js', 'Angular'], icon: Code },
-    { category: 'Backend', items: ['Node.js', 'Python', 'Java'], icon: Server },
-    { category: 'DevOps', items: ['Docker', 'Kubernetes', 'AWS'], icon: Cloud },
+    { category: 'Frontend', items: ['React', 'Next.js', 'HTML', 'CSS', 'TailwindCSS', 'Shadcn UI'], icon: Code },
+    { category: 'Backend', items: ['Node.js', 'Python', 'Dart', 'Go', 'Node.js', 'Node.js'], icon: Server },
+    { category: 'DevOps', items: ['PostgreSQL', 'Docker', 'Firebase', 'Supabase', 'Google Cloud', 'MongoDB', ], icon: Cloud },
 ]
 
 const SpinnerWheel = ({ items, duration }) => {
@@ -32,7 +32,7 @@ const SpinnerWheel = ({ items, duration }) => {
                             y: index === currentIndex ? '0%' : '100%',  // Only show current item at 0%
                             opacity: index === currentIndex ? 1 : 0, // Hide non-current items
                         }}
-                        transition={{ duration: 0.7, ease: 'easeInOut' }}
+                        transition={{ duration: 0.9, ease: 'easeInOut' }}
                     >
                         <span className="text-2xl font-bold text-white text-shadow">{item}</span>
                     </motion.div>
@@ -44,7 +44,7 @@ const SpinnerWheel = ({ items, duration }) => {
 
 const TechStackSection = () => {
     return (
-        <div className="bg-gradient-to-b from-white to-orange-100 dark:from-black dark:to-yellow-600 min-h-screen flex items-center justify-center w-full px-4 py-16 sm:px-6 lg:px-8">
+        <div className="bg-transparent min-h-screen flex items-center justify-center w-full px-4 py-16 sm:px-6 lg:px-8">
             <main className="w-full max-w-7xl mx-auto flex flex-col items-center space-y-16 lg:space-y-0 lg:flex-row lg:items-start gap-12 lg:gap-16">
                 
                 {/* Tech Stack Introduction */}

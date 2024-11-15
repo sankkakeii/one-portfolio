@@ -6,7 +6,7 @@ import { ArrowUpRight, Camera, Code, Palette } from 'lucide-react'
 
 export default function AboutMe() {
     return (
-        <div className="bg-gradient-to-b from-white to-orange-100 dark:bg-gradient-to-b dark:from-black dark:to-yellow-600 min-h-screen flex items-center justify-center w-full px-4 py-8 sm:px-6 lg:px-8 relative">
+        <div className="bg-transparent min-h-screen flex items-center justify-center w-full px-4 py-8 sm:px-6 lg:px-8 relative">
             <main className="w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
                 
                 {/* Image Section with Icon Animations */}
@@ -67,7 +67,7 @@ export default function AboutMe() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4, duration: 0.5 }}
                     >
-                        I&apos;m a passionate creative professional with expertise in photography, web development, and design. My goal is to create visually stunning and functionally seamless experiences.
+                        I&apos;m a creative professional with expertise in prototyping, web development, and design. My goal is to create visually stunning and functionally seamless experiences.
                     </motion.p>
                     
                     {/* Icons Row */}
@@ -90,12 +90,12 @@ export default function AboutMe() {
                         transition={{ delay: 0.8, duration: 0.5 }}
                     >
                         <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md text-center">
-                            <h2 className="text-4xl font-bold text-yellow-500 dark:text-yellow-300">5+ Years</h2>
+                            <h2 className="text-4xl font-bold text-yellow-500 dark:text-yellow-300">4+ Years</h2>
                             <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">Experience in creative industries</p>
                         </div>
                         <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md text-center">
-                            <h2 className="text-4xl font-bold text-yellow-500 dark:text-yellow-300">100+</h2>
-                            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">Projects completed for clients worldwide</p>
+                            <h2 className="text-4xl font-bold text-yellow-500 dark:text-yellow-300">10+</h2>
+                            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300">Projects completed and ongoing for clients and personally</p>
                         </div>
                     </motion.div>
                 </motion.div>
