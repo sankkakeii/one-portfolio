@@ -2,13 +2,14 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { ArrowUpRight, Camera, Code, Palette } from 'lucide-react'
+import { Camera, Code, Palette } from 'lucide-react'
 
 export default function AboutMe() {
     return (
         <div className="bg-transparent min-h-screen flex items-center justify-center w-full px-4 py-8 sm:px-6 lg:px-8 relative">
             <main className="w-full max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
-                
+
+                {/* Image Section with Icon Animations */}
                 {/* Image Section with Icon Animations */}
                 <motion.div
                     className="w-full lg:w-1/2 relative"
@@ -16,17 +17,18 @@ export default function AboutMe() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.5, duration: 0.5 }}
                 >
-                    <div className="relative w-full h-0 py-6 sm:pb-[75%] lg:pb-[100%]">
+                    <div className="relative w-full h-0 py-[20%] sm:pb-[75%] lg:pb-[100%]">
                         <img
                             src="/images/masks/about-mask.svg"
                             alt="Creative professional at work"
-                            className="absolute top-0 left-0 w-full h-full object-cover"
+                            className="absolute top-0 left-0 w-full h-full object-fit: cover"
                         />
                         <motion.div
                             className="absolute flex flex-col space-y-4"
                             style={{
                                 bottom: '15%',
-                                left: '8%'
+                                left: '8%',
+                                maxWidth: '50%',
                             }}
                         >
                             {[Camera, Code, Palette].map((Icon, index) => (
@@ -69,7 +71,7 @@ export default function AboutMe() {
                     >
                         I&apos;m a creative professional with expertise in prototyping, web development, and design. My goal is to create visually stunning and functionally seamless experiences.
                     </motion.p>
-                    
+
                     {/* Icons Row */}
                     <motion.div
                         className="flex space-x-6 text-yellow-500 dark:text-yellow-400 animate-fadeInRight"
@@ -81,7 +83,7 @@ export default function AboutMe() {
                         <Code className="w-8 h-8 sm:w-10 sm:h-10" />
                         <Palette className="w-8 h-8 sm:w-10 sm:h-10" />
                     </motion.div>
-                    
+
                     {/* Stats Section */}
                     <motion.div
                         className="flex flex-col sm:flex-row justify-between gap-4 sm:gap-8 animate-fadeInUp"
